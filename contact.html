@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Contact Macy De Leon.">
+    <title>Macylene De Leon | Contact</title>
+    <style>
+        header, nav, footer, fieldset, dialog {
+            border: 1px solid black;
+        }
+        skill-tag {
+            display: inline-block;
+            border: 1px solid #7c3aed;
+            border-radius: 12px;
+            padding: 2px 10px;
+            margin: 2px;
+            background-color: #f3e8ff;
+            color: #4c1d95;
+            font-family: monospace;
+            font-size: 0.9rem;
+        }
+    </style>
+    <script src="scripts/hello-world.js" defer></script>
+</head>
+<body>
+    <header>
+        <h1>Contact</h1>
+        <nav>
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="projects.html">Projects</a></li>
+                <li><a href="skills.html">Skills</a></li>
+                <li><a href="interests.html">Interests</a></li>
+                <li>Contact</li>
+            </ul>
+        </nav>
+    </header>
+    <main>
+        <section>
+            <h2>Say hello</h2>
+            <dialog open>
+            </dialog>
+            <p>
+                Whether it's about a project, a class, or other things,
+                I'd love to hear from you!
+            </p>
+            <form action="#" method="post">
+                <fieldset>
+                    <legend>Your info</legend>
+                    <p>
+                        <label for="name">Name</label>
+                        <br>
+                        <input type="text" id="name" name="name" autocomplete="name">
+                    </p>
+                    <p>
+                        <label for="email">Email</label>
+                        <br>
+                        <input type="email" id="email" name="email" autocomplete="email">
+                    </p>
+                </fieldset>
+                <fieldset>
+                    <legend>Your message</legend>
+                    <p>
+                        <label for="topic">Topic</label>
+                        <br>
+                        <input type="text" id="topic" name="topic">
+                    </p>
+                    <p>
+                        <label for="message">Message</label>
+                        <br>
+                        <textarea id="message" name="message" rows="6" cols="40"></textarea>
+                    </p>
+                </fieldset>
+                <button type="submit">Send message</button>
+            </form>
+        </section>
+    </main>
+    <noscript>
+        <p>This site does not need JavaScript enabled to be read.</p>
+    </noscript>
+    <footer>
+        <p>Built by Macylene De Leon <a href="index.html">Back to home</a></p>
+    </footer>
+    <hello-world></hello-world>
+</body>
+</html>

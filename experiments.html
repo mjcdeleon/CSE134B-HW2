@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Experimental HTML tags: template, audio, video, canvas, source.">
+    <title>Macylene De Leon | Experiments</title>
+    <style>
+        header, nav, footer, section {
+            border: 1px solid black;
+        }
+    </style>
+    <script src="scripts/hello-world.js" defer></script>
+</head>
+<body>
+    <header>
+        <h1>Experimental Tags</h1>
+        <p>A playground page exploring media and templating elements.</p>
+        <nav>
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="projects.html">Projects</a></li>
+                <li><a href="skills.html">Skills</a></li>
+                <li><a href="interests.html">Interests</a></li>
+                <li><a href="contact.html">Contact</a></li>
+            </ul>
+        </nav>
+    </header>
+    <main>
+        <section>
+            <h2>Audio</h2>
+            <audio controls>
+                <source src="media/japn10a-name.m4a" type="audio/mp4">
+             
+            </audio>
+        </section>
+        <section>
+            <h2>Video</h2>
+            <video controls width="320" height="240">
+                <source src="media/video12508244224.mp4" type="video/mp4">
+       
+            </video>
+        </section>
+        <section>
+            <h2>Canvas</h2>
+
+            <canvas id="demo-canvas" width="320" height="120">
+
+            </canvas>
+            <script>
+                const canvas = document.getElementById("demo-canvas");
+                const ctx = canvas.getContext("2d");
+                ctx.fillStyle = "#f3e8ff";
+                ctx.fillRect(0, 0, 320, 120);
+                ctx.fillStyle = "#7c3aed";
+                ctx.fillRect(20, 30, 60, 60);
+                ctx.beginPath();
+                ctx.arc(160, 60, 30, 0, 2 * Math.PI);
+                ctx.fill();
+                ctx.font = "16px sans-serif";
+                ctx.fillText("canvas!", 230, 66);
+            </script>
+        </section>
+        <section>
+            <h2>Template</h2>
+            <p>
+                Below is the template
+            </p>
+            <template id="project-card-template">
+                <article>
+                    <h3>Future Project Title</h3>
+                    <p>Short description.</p>
+                    <ul>
+                        <li>Feature one</li>
+                        <li>Feature two</li>
+                    </ul>
+                </article>
+            </template>
+        </section>
+    </main>
+    <footer>
+        <p>Built by Macylene De Leon <a href="index.html">Back to home</a></p>
+    </footer>
+    <hello-world></hello-world>
+</body>
+</html>

@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Projects by Macy De Leon: academic tracking app and VR development.">
+    <title>Macylene De Leon | Projects</title>
+    <style>
+        header, nav, footer, article {
+            border: 1px solid black;
+        }
+        skill-tag {
+            display: inline-block;
+            border: 1px solid #7c3aed;
+            border-radius: 12px;
+            padding: 2px 10px;
+            margin: 2px;
+            background-color: #f3e8ff;
+            color: #4c1d95;
+            font-family: monospace;
+            font-size: 0.9rem;
+        }
+    </style>
+    <script src="scripts/hello-world.js" defer></script>
+</head>
+<body>
+    <header>
+        <h1>Projects</h1>
+        <nav>
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li>Projects</li>
+                <li><a href="skills.html">Skills</a></li>
+                <li><a href="interests.html">Interests</a></li>
+                <li><a href="contact.html">Contact</a></li>
+            </ul>
+        </nav>
+    </header>
+    <main>
+        <section>
+            <h2>Coursework &amp; Group Projects</h2>
+            <p>
+                Here are some recent projects I have done for coursework!
+            </p>
+
+            <article>
+                <h3>Academic Tracking App <span>(CSE 110 Software Engineering)</span></h3>
+                <img src="images/tracker.svg" alt="Mockup of the academic tracker showing an assignment card with a progress bar" width="320" height="180">
+                <p>
+                    A group project worked on throughout the quarter to track class progress:
+                    The app lets students:
+                </p>
+                <ol>
+                    <li>List the classes they are enrolled in</li>
+                    <li>Add assignments, projects, and quizzes for each class</li>
+                    <li>Record due dates, hours worked, and percent progress</li>
+                    <li>All while also accounting for late date / late policies specific to the classes</li>
+                </ol>
+                <p>
+                    Primary skills used:
+                </p>
+                <p>
+                    <skill-tag>JavaScript</skill-tag>
+                    <skill-tag>Agile teamwork</skill-tag>
+                </p>
+            </article>
+
+            <article>
+                <h3>Pilot Pichu <span>(CSE 165 3D User Interaction)</span></h3>
+                <p>
+                    A VR game where the user is a pilot whose goal is to finish the race course they are spawned in front of.
+                </p>
+                <p>
+                    What was implemented:
+                </p>
+                <ol>
+                    <li> Hand tracking to indicate the go, stop, and turn functions of the pilot in game</li>
+                    <li> World waypoints to act as checkpoints where the player has to go</li>
+                    <li> A way for checkpoints to turn off once reached</li>
+                    <li> Visible timer to record and show player their time</li>
+                    <li> Respawning character if they crashed at last checkpoint hit</li>
+                </ol>
+                <p>
+                    Primary skills used:
+                </p>
+                <p>
+                    <skill-tag>C++</skill-tag>
+                    <skill-tag>VR locomotion</skill-tag>
+                </p>
+            </article>
+
+            <article>
+                <h3>20 Questions vs. an AI Bot <span>(CSE 165 #d User Interaction)</span></h3>
+                <p>
+                    A game of 20 Questions played against an AI bot. The bot thinks
+                    of a random noun, and the player can either speak or type a
+                    yes-or-no question in chat. The bot answers accordingly and
+                    will even give hints when asked.
+                </p>
+                <p>
+                    What was implemented:
+                </p>
+                <ol>
+                    <li>Voice input- taking in user's voice turning into json for AI to discern</li>
+                    <li>Gestures by AI bot as reactions to questions to create more immersive experience</li>
+                    <li>Ties to virtual keyboard to json so AI can answer given questions</li>
+                </ol>
+                <p>
+                    Primary skills used:
+                </p>
+                <p>
+
+                    <skill-tag>Voice input</skill-tag>
+                    <skill-tag>AI integration</skill-tag>
+                    <skill-tag>C++</skill-tag>
+                </p>
+            </article>
+        </section>
+    </main>
+    <noscript>
+        <p>This site does not need JavaScript to be enabled to be read.</p>
+    </noscript>
+    <footer>
+        <p>Built by Macylene De Leon <a href="index.html">Back to home</a></p>
+    </footer>
+    <hello-world></hello-world>
+</body>
+</html>
